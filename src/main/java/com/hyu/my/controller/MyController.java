@@ -31,7 +31,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyController {
 
     @Autowired
-    @Qualifier("vehicleMachine")
     StateMachine<States, Events> stateMachine;
     @Autowired
     VehicleService vehicleService;
